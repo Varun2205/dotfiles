@@ -1,0 +1,19 @@
+// Settings that influence how windows are positioned and sized.
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Layout
+
+
+// Add lines like this to spawn processes at startup.
+// Note that running niri as a session supports xdg-desktop-autostart,
+// which may be more convenient to use.
+// See the binds section below for more spawn examples.
+
+// This line starts waybar, a commonly used bar for Wayland compositors.
+//spawn-at-startup "waybar"
+spawn-at-startup "qs" "-c" "noctalia-shell"
+//spawn-at-startup "wayle panel start"
+
+//For keyboard input
+spawn-sh-at-startup "fcitx5 -d"
+// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
