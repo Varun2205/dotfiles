@@ -1,0 +1,21 @@
+# Ignore everything
+*
+
+# Keep this file
+!.gitignore
+
+# Allow Git to traverse directories
+!*/
+
+# Track only these directories
+!rofi/
+!rofi/**
+
+!waybar/
+!waybar/**
+
+!niri/
+!niri/**
+
+!ghostty/
+!ghostty/**
