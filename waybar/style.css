@@ -1,0 +1,78 @@
+@import "colors.css"; /* Gruvbox hex colors [25] */
+
+* {
+    all: unset;
+    font-family: "Rubik", "JetBrains Mono Nerd Font Propo", "Noto Sans CJK JP"; /* Icons and multi-language support [24, 26] */
+    font-size: 14px;
+}
+
+tooltip {
+    background: @bg1;
+    color: @fg;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#waybar {
+    background: transparent; 
+}
+
+.modules-center {
+    background-color: @bg1;
+    padding: 2px 8px;
+    border-radius: 99px;
+    margin-top: 5px;
+}
+
+#clock {
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+#workspaces {
+    background-color: @bg2;
+    padding: 2px 4px;
+    margin: 2px 0;
+    border-radius: 99px;
+}
+
+#workspaces button {
+    background-color: @bg3;
+    padding: 2px 4px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    margin: 0 2px;
+    min-width: 15px;
+}
+
+#workspaces button.active {
+    background-color: @bright_green;
+    color: @bg0;
+    min-width: 1.5rem;
+    border-radius: 99px;
+    font-weight: 600;
+    transition: none;
+}
+
+#workspaces button.empty {
+    color: @grey0;
+}
+
+/* Custom Battery Pill Styling */
+#battery {
+    background-color: @green; /* Gruvbox Green [30, 31] */
+    min-width: 30px;
+    color: @bg1;
+    border-radius: 90px;
+    padding: 0 10px;
+    margin: 4px 2px;
+}
+
+#battery.warning {
+    background-color: @bright_yellow; /* Gruvbox Yellow [22] */
+}
+
+#battery.critical {
+    background-color: @red; /* Gruvbox Red [32] */
+}
+

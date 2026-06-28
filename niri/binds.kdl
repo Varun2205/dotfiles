@@ -261,7 +261,7 @@ binds {
     // Mod+Shift+Space { switch-layout "prev"; }
 
     Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
+    Ctrl+Delete { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
     // Applications such as remote-desktop clients and software KVM switches may
@@ -288,9 +288,9 @@ binds {
     // Apps for my Convinience
 
     //Helium
-    Mod+B { spawn "/home/Varun/Downloads/App Images/helium-0.11.7.1-x86_64.appimage"; }
+    Mod+B { spawn "librewolf"; }
     
     // Launcher
-    Mod+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    //Mod+Space { spawn "bash" "-c" "/home/Varun/.config/rofi/launcher.sh"; }
+    //Mod+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    Mod+Space { spawn "bash" "-c" "$HOME/.config/rofi/launcher.sh"; }
 }

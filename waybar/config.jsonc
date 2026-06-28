@@ -1,0 +1,66 @@
+{
+    "layer": "top", 
+    "position": "top",
+    "margin-top": 8, 
+    "spacing": 10, 
+    "modules-center": [
+        "clock",
+        "niri/workspaces",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十"
+        }
+    },
+    "clock": {
+        "format": "{:%H:%M}", 
+        "tooltip": false, 
+        "update-interval": 60
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "muted",
+        "format-icons": {
+            "headset": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol" 
+    },
+    "network": {
+        "interface": "wlp1s0", 
+        "format-wifi": "{icon} {essid}",
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ] 
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}", 
+        "tooltip-format": "{timeTo}"
+    }
+}

@@ -34,6 +34,10 @@ window-rule {
     match app-id="com.rtosta.zapzap"
     open-maximized true
 }
+window-rule {
+    match app-id="librewolf"
+    open-maximized true
+}
 
 //Floating Apps
 window-rule {
