@@ -34,6 +34,7 @@
             "2":       SwitchToTab("Playlists"),
             "3":       SwitchToTab("Library"),
             "4":       SwitchToTab("Artists"),
+            "5":       SwitchToTab("Albums"),
             "F":       SwitchToTab("Search"),
             "q":       Quit,
             ">":       NextTrack,
@@ -154,6 +155,13 @@
             pane: Split(
                 direction: Horizontal,
                 panes: [(size: "100%", borders: "ALL", pane: Pane(Artists))],
+            ),
+        ),
+        (
+            name: "Albums", 
+            pane: Split(
+                direction: Horizontal,
+                panes: [(size: "100%", borders: "ALL", pane: Pane(Albums))],
             ),
         ),
         (
