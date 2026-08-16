@@ -293,4 +293,8 @@ binds {
     // Launcher
     //Mod+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Mod+Space { spawn "bash" "-c" "$HOME/.config/rofi/launcher.sh"; }
+
+    // Notifications center
+    Mod+A { spawn-sh "swaync-client -t"; }
 }
+
