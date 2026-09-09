@@ -19,3 +19,23 @@
 
 !ghostty/
 !ghostty/**
+
+!fastfetch/
+!fastfetch/**
+
+!mpd/
+!mpd/**
+
+!rmpc/
+!rmpc/**
+
+!Wallpapers/
+!Wallpapers/**
+
+!swaync/
+!swaync/**
+
+!swaync.png
+!rice.jpeg
+!rmpc.png
+!README.md

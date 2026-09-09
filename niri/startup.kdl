@@ -17,3 +17,6 @@ spawn-at-startup "waybar"
 spawn-sh-at-startup "fcitx5 -d"
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+
+//spawn-sh-at-startup "qs -p ~/Documents/todoapp/shell.qml"
+//spawn-sh-at-startup "qs -p ~/Documents/todoapp/smart_folder.qml"
